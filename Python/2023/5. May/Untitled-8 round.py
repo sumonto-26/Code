@@ -1,0 +1,11 @@
+# Round a number to a given precision in decimal digits.
+print(round(10 / 6 , 1))
+print(round(10 / 6 , 2))
+print(round(10 / 6 , 3))
+print(round(10 / 6 , 4))
+print(round(10 / 6 , 5))
+print(round(10 / 6 , 6))
+print(round(10 / 6 , 7))
+print(round(10 / 6 , 8))
+print(round(10 / 6 , 9))
+print(round(10 / 6 , 10))

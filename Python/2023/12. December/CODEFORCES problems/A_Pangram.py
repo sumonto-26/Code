@@ -1,0 +1,7 @@
+a = int(input())
+b = input().lower()
+c = set(b)
+d = sorted(c)
+e = ''.join(d)
+if e == 'abcdefghijklmnopqrstuvwxyz':   print('yes')
+else:   print("NO")

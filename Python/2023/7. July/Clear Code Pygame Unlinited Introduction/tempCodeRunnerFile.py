@@ -1,0 +1,1 @@
+player_stand = pygame.transform.rotozoom(player_stand, 0, 3.7)

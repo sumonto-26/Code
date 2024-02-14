@@ -1,0 +1,6 @@
+number = input  ("enter your first number  ")
+number2 = input ("enter your second number ")
+print (float (number) + float ( number2 ))
+print (float (number) - float ( number2 ))
+print (float (number) * float ( number2 ))
+print (float (number) / float ( number2 ))
