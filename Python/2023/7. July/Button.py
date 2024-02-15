@@ -50,7 +50,7 @@ class Button:
             else:
                 self.dynamic_elevation = self.elevation
                 if self.pressed == True :
-                    print('THANK YOU')
+                    print('Cliked')
                     self.pressed = False
                     
         else :
