@@ -8,4 +8,4 @@ for _ in range(int(input())):
     elif (a[0] * (10**a[1]))  < (b[0] * (10**b[1])):
         print("<")
     else: 
-        print("="* 1000000)
+        print("=")
