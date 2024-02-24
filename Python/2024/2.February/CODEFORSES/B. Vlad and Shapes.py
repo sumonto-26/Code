@@ -4,10 +4,6 @@ def solve():
         a = list(map(int,input()))
         l.append(sum(a))
     return l
-    
-    
-            
-
 for _ in range(int(input())):
     n = int(input())
     ans = solve()
