@@ -17,7 +17,7 @@ background_color = (102, 102, 102)
 # Load explosion frames with background removal
 explosion_frames = []
 for i in range(1, 7):
-    file_path = f"Code/Python/2024/3. March/Practice March/Explosions ({i}).jpg"
+    file_path = f"Code/Python/2024/3. March/Practice March/Explosions/Explosions ({i}).jpg"
     frame = pygame.image.load(file_path).convert()  # Load the image
     explosion_frames.append(frame)
 

@@ -1,5 +1,5 @@
 # B. Ten Words of Wisdom 
-'''for _ in range(int(input())):
+for _ in range(int(input())):
     l = []
     l2 = []
     for i in range(int(input())):
@@ -10,4 +10,4 @@
             
     ans = max(l, key=lambda x: x[1])
     ans2 = l2.index(max(l, key=lambda x: x[1]))
-    print(ans2 + 1)'''
+    print(ans2 + 1)
