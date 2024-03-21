@@ -135,13 +135,6 @@ int main() {
     } while(n>0);
     */
 
-    double x;
-    cin >> x;
-
-    double ans = 3.14159 * (x * x);
-
-    // Set precision to 4 decimal places and use fixed-point notation
-    cout << "A=" << fixed << setprecision(4) << ans << endl;
 
 
 

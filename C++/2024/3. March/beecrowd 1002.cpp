@@ -10,7 +10,7 @@ int main(){
 
     double ans = 3.14159 * (x * x);
 
-    cout << "A="  << setprecision(6.4) << ans << endl;
+    cout << "A=" << fixed << setprecision(4) << ans << endl;
 
     return 0;
 }
