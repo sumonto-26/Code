@@ -1,4 +1,7 @@
 #include <iostream> // input output stream
+#include <cmath> 
+#include <iomanip>
+
 using namespace std;
 
 int main() {
@@ -65,7 +68,7 @@ int main() {
     cin >> a >> b;
 
     cout << a << " + " << b  << " = " << a + b;
-    */
+    
 
     // EXERSIZE SOLUTION BY ME //
     cout << "Fahrenheit: ";
@@ -74,5 +77,74 @@ int main() {
     double celsius = (fahrenheit - 32)* 1.8 ;
     cout <<fahrenheit<<" Fahrenheit == "<< celsius<< " Celsius"<< endl;
 
-    return 0;  // finish 55:10 
+    cout <<"enter radius: ";
+    double radius;
+    cin >> radius;
+    const double pi = 3.14;
+    double area = pi * pow (radius, 2);
+    cout << area << endl;
+
+
+    // IF ELSE_IF ELSE //
+    cout <<"Enter a Number: ";
+    int number;
+    cin >> number;
+
+    if (number > 0){
+        cout << "Your Number is Positive.";
+    }
+    else if (number < 0){
+        cout << "Your Number is Nagetive";
+    }
+    else{
+        cout << "Your Number is 0";
+    }
+
+
+    //FOR LOOP//
+    cout << "Enter a number: ";
+    int n;
+    cin >> n;
+    
+    int sum = 0;
+
+    for (int counter = 1; counter <= n; counter ++){
+        sum = sum + counter;
+    }
+    cout << sum << endl;
+    
+    
+   // WHILE LOOP //
+    int n;
+    cin >> n;
+
+    while (n>0){
+        cout<<n<<endl;
+        n--;
+    }
+
+    
+
+   // DO WHILE LOOP //
+    int n;
+    cin >> n;
+
+    do {
+        cout << n <<endl;
+        n--;
+    } while(n>0);
+    */
+
+    double x;
+    cin >> x;
+
+    double ans = 3.14159 * (x * x);
+
+    // Set precision to 4 decimal places and use fixed-point notation
+    cout << "A=" << fixed << setprecision(4) << ans << endl;
+
+
+
+
+    return 0; 
 }
