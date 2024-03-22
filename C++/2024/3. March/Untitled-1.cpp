@@ -1,6 +1,7 @@
 #include <iostream> // input output stream
 #include <cmath> 
 #include <iomanip>
+#include <climits>
 
 using namespace std;
 
@@ -123,7 +124,6 @@ int main() {
         n--;
     }
 
-    
 
    // DO WHILE LOOP //
     int n;
@@ -133,9 +133,40 @@ int main() {
         cout << n <<endl;
         n--;
     } while(n>0);
+    
+
+
+
+    // ARRAY //
+    /*string str[2] = {"one", "tow"};
+    cout << str[0];
+
+    int n;
+    cin >> n;
+
+    int list[n];
+    for (int i = 0; i < n; i++){
+        cin >> list[i];
+        cout << list[i] << " ";
+    }
+    cout << endl;
+
+    // max() and min() in c++
+    // Initialize maxNo and minNo for gives correct value not random 
+    int maxNo = INT_MIN; 
+    int minNo = INT_MAX;
+
+    for (int j = 0; j < n; j++){
+        maxNo = max(maxNo, list[j]);
+        if (list[j] < minNo){
+            minNo = list[j];
+        }
+    }
+    
+    cout << endl << "Maximum Number is "<< maxNo <<endl; 
+    cout << "Minimum Number is "<< minNo <<endl; 
+
     */
-
-
 
 
 
