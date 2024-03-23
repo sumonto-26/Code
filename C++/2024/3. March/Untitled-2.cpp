@@ -93,7 +93,6 @@ int main(){
     return 0;
 }
 
-*/
 
 // 1015 //
 #include <iostream>
@@ -110,6 +109,24 @@ int main(){
 
     double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
     cout << fixed << setprecision(4) << distance << endl;
+
+    return 0;
+}
+*/
+
+// 1017 //
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main(){
+
+    double time, speed;
+    cin >> time;
+    cin >> speed;
+
+    double fuel = (time * speed) / 12;
+    cout << fixed << setprecision(3) << fuel << endl;
 
     return 0;
 }
