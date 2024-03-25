@@ -273,7 +273,6 @@ int main (){
     return 0;
 }
 
-*/
 
 #include <iostream>
 using namespace std;
@@ -301,6 +300,48 @@ int main (){
         }
         if (i == 7){
             cout << "DDD nao cadastrado" << endl;
+        }
+    }
+
+    return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int month_number;
+    cin >> month_number;
+
+    string month_list[12] = {
+        "January","February","March",
+        "April","May","June",
+        "July","August","September",
+        "October","November","December"};
+
+    cout << month_list[month_number-1] << endl;
+
+    return 0;
+}
+
+
+*/
+#include <iostream>
+using namespace std;
+
+int main(){
+    int x;
+    cin >> x;
+
+    if (x % 2 == 0){
+        for (int i = x+1; i < (x + 12); i += 2){
+            cout << i<< endl;
+        }
+    }
+    else{
+        for (int i = x; i < (x + 11); i += 2){
+            cout << i<< endl;
         }
     }
 
