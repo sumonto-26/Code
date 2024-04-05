@@ -7,3 +7,4 @@ for _ in range(int(input())):
         print("R")
     else:
         print("B")
+        
