@@ -24,6 +24,8 @@ def my_sum_function(a, i=0):
 ans2 = my_sum_function(a)
 print(f"Sum == {ans2}")"""
 
+
+'''
 # Dictionary to store computed Fibonacci numbers
 fib_cache = {}
 
@@ -40,4 +42,13 @@ a = int(input("Enter a number: "))
 for i in range(0, a+1):
     ans = fibonacci(i)
     print(ans, end = "\n\n")
+'''
 
+n = int(input())
+def factorial(n):
+    if n <= 1:
+        return 1
+    else:
+        return n*factorial(n-1)
+    
+print(factorial(n)) 
