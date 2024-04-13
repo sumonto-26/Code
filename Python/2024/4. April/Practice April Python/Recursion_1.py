@@ -1,9 +1,9 @@
-# def show(n):
-#     if n == 0:
-#         return
-#     print(n)
-#     show(n-1)
-# show(5)
+def show(n):
+    if n == 0:
+        return
+    print(n)
+    show(n-1)
+show(5)
 
 
 """a = list(map(int,input().split()))
@@ -44,7 +44,7 @@ for i in range(0, a+1):
     print(ans, end = "\n\n")
 '''
 
-n = int(input())
+"""n = int(input())
 def factorial(n):
     if n <= 1:
         return 1
@@ -52,3 +52,6 @@ def factorial(n):
         return n*factorial(n-1)
     
 print(factorial(n)) 
+"""
+
+
