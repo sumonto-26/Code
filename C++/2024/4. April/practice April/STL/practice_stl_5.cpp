@@ -56,6 +56,8 @@ int main(){
         cout << pr.first << " " << pr.second << endl;
     }*/
 
+
+    // 1 Problem with Easyly solved by MAP in S++ STL
     /*
     Given N strings, print unique strings 
     in lexiographicnal order with their 
