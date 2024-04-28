@@ -12,16 +12,16 @@ string is_balanced(string s){
         }
         else{
             if (st.empty() || symbol_list[st.top()] + symbol_list[value] != 0){
-                return "NO";
+                return "Not Balanced";
             }
             st.pop();
         }
     }
     if (st.empty()){
-        return "YES";
+        return "Balanced";
     }
     else{
-        return "NO";
+        return "Not Balanced";
     }
 }
 

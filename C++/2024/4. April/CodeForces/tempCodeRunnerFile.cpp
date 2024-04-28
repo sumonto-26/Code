@@ -1,1 +1,1 @@
-int main() {
+    print_vec(lights);
