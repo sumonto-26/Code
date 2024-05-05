@@ -1,0 +1,6 @@
+num = int(input())
+binary = str(bin(num))
+binary = binary.replace('1', "_")
+binary = binary.replace('0', "1")
+binary = binary.replace('_', "0")
+print(int(str(binary[2:]),2))
