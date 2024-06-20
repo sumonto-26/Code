@@ -35,39 +35,42 @@ def binary_search(arr, target):
 
 def merge_sort(arr):
     if len(arr) > 1:
-        mid = len(arr) // 2
-        left_half = arr[:mid]
-        right_half = arr[mid:]
-
-        merge_sort(left_half)
-        merge_sort(right_half)
-
+        # DIVIDE
+        mid = len(arr)//2
+        left_side = arr[:mid]
+        right_side = arr[mid:]
+        merge_sort(left_side)
+        merge_sort(right_side)
+        
+        # MERGE
         i = j = k = 0
-
-        # Merge the sorted halves
-        while i < len(left_half) and j < len(right_half):
-            if left_half[i] < right_half[j]:
-                arr[k] = left_half[i]
+        while i < len(left_side) and j < len(right_side):
+            if left_side[i] < right_side[j]:
+                arr[k] = left_side[i]
                 i += 1
             else:
-                arr[k] = right_half[j]
+                arr[k] = right_side[j]
                 j += 1
             k += 1
-
-        # Check if any element was left in left_half
-        while i < len(left_half):
-            arr[k] = left_half[i]
+            
+        while i < len(left_side):
+            arr[k] = left_side[i]
             i += 1
             k += 1
-
-        # Check if any element was left in right_half
-        while j < len(right_half):
-            arr[k] = right_half[j]
+        while j < len(right_side):
+            arr[k] = right_side[j]
             j += 1
             k += 1
-    
     return arr
 
+def selection_sort(arr):
+    for i in range(len(arr)):
+        m = i # minimum element
+        for j in range(i+1,len(arr)):
+            if arr[m] > arr[j]: 
+                m = j
+        arr[i], arr[m] = arr[m], arr[i]
+    return arr
 
 def kth(a, k): # array , k 
     n = len(a)
@@ -102,4 +105,5 @@ print(sorted_arr)
 print(binary_search(arr, 1))
 '''
 arr = [1,46,3,3,5,76,42,42,43,7,67,8,63,423,42,65,8]
-print(merge_sort(arr))
+print(merge_sort(arr), "MERGE SORT")
+print(selection_sort(arr))
