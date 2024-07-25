@@ -159,7 +159,7 @@ int main(){
             continue;
         }
         printf("%d\n", i);
-        i += 1;
+        i ++;
     }
     while(i<=50);
 
