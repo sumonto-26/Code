@@ -1,4 +1,5 @@
 // DATE ==> 29 JULY 2024
+// Topic ==> Solve HARD Pattern Print Problem with Simple Trick
 
 #include <iostream>
 using namespace std;
