@@ -47,8 +47,8 @@ int main(){
     cout << "Enter The Target: ";
     cin >> target;
 
-    Binary_Search_decreasing(arr, n, target);
-    Binary_Search_increasing(arr, n, target);
+    // Binary_Search_decreasing(arr, n, target);
+    // Binary_Search_increasing(arr, n, target);
     
 
     return 0;
