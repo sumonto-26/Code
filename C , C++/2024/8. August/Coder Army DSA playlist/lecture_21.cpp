@@ -19,24 +19,42 @@ int main(){
     for(int i = 0; i < lenght; i++)
         cin >> array[i];
 
+
     for(int i = 1; i <= lenght; i++){
         for(int j = i-1; j > 0; j--){
             if(array[j-1] > array[j])
                 swap(array[j], array[j-1]);
-            else break; // why break??
+            else break;
         }
     }
     print_array(array,lenght);
+    cout << endl;
+
 
 
     for(int i = 1; i <= lenght; i++){
         for(int j = i-1; j > 0; j--){
             if(array[j-1] < array[j])
                 swap(array[j], array[j-1]);
-            else break; // why break??
+            else break;
         }
     }
     print_array(array,lenght);
+    cout << endl;
+
+
+
+    for(int i = 1; i <= lenght; i++){
+        for(int j = 0; j <= i-2; j++){
+            if(array[j+1] > array[j])
+                swap(array[j], array[j+1]);
+            else break;
+        }
+    }
+    print_array(array,lenght);
+    cout << endl;
+
+
 
     return 0;
 }
