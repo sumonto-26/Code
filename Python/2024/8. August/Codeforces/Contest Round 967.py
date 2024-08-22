@@ -1,6 +1,7 @@
 # DATE ==> 20 AUGUST 2024
 # AUTHOR ==> SUMONTO
 
+# A 
 '''
 for _ in range(int(input())):
     n = int(input())
@@ -14,6 +15,7 @@ for _ in range(int(input())):
     print(n-max_count)
 '''
 
+# B
 for _ in range(int(input())):
     n = int(input())
     if n%2 == 0: print(-1)
