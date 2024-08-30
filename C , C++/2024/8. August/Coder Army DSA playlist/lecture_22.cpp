@@ -7,7 +7,7 @@ using namespace std;
 void Binary_Search_increasing(int arr[], int n, int target){
     int start = 0, end = n-1;
     while(start <= end){
-        int mid = (start/2) + (end/2); 
+        int mid = start+(end-start)/2; 
         if (arr[mid] == target){
             cout << target << " is found in index " << mid << endl; 
             return ;
@@ -22,7 +22,7 @@ void Binary_Search_increasing(int arr[], int n, int target){
 void Binary_Search_decreasing(int arr[], int n, int target){
     int start = 0, end = n-1;
     while(start <= end){
-        int mid = (start/2) + (end/2); 
+        int mid = start+(end-start)/2; 
         if (arr[mid] == target){
             cout << target << " is found in index " << mid << endl; 
             return ;
