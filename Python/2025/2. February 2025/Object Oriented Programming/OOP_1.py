@@ -1,6 +1,5 @@
 # DATE ==> 17 February 2025
 # YOUTUBE VIDEO LINK =====> https://www.youtube.com/watch?v=HeW-D6KpDwY&t=180s&ab_channel=ShradhaKhapra
-# Finish =====> 38:50 sec 
 
 """
 # Creating class
@@ -61,13 +60,12 @@ print(car1.color)
 print(car1.brand)
 
 car2 = Car()
-"""
 
 class Student:
     def __init__(self, name, marks):
         self.name = name
         self.marks = marks
-        
+            
     def get_avg(self):
         sum = 0
         num = 0
@@ -82,3 +80,52 @@ s1.get_avg()
 s1.name = "Iron Man"
 s1.marks = [55, 99, 80]
 s1.get_avg()
+
+class Car:
+    car_price = 1000000
+    def __init__(self):
+        print(f"Car Price is {self.car_price}")
+        
+    @staticmethod
+    def car_petrol(car_price):
+        car_ptrol = car_price/500
+        print(car_ptrol, "-----")
+        return car_ptrol
+        
+car1 = Car()
+Car.car_petrol(5000)
+car1.car_petrol(5000)
+print(car1.car_petrol(5000))
+"""
+
+
+# What is Abstraction? 
+# Hiding the implementation details of a class and only showing the essential features to the user.
+class Account:
+    def __init__ (self, bal, acc):
+        self.balance = bal
+        self.account_num = acc
+    
+    def debit(self, amount):
+        self.balance -= amount  
+        print("Rs.", amount, "was debited")
+        print("total balance = ", self.get_balance())
+    
+    def credit(self, amount):
+        self.balance += amount  
+        print("Rs.", amount, "was credited")
+        print("total balance = ", self.get_balance())
+    
+    def get_balance(self):
+        return self.balance
+    
+acc1 = Account(10000, 12345)
+acc1.debit(1000)
+acc1.credit(500)
+acc1.credit(5000)
+acc1.debit(1000)
+# print(acc1.balance)
+# print(acc1.account_num)
+
+# What is Encapsulation?
+# Wrapping data and functions into a single unit(object)
