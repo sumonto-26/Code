@@ -101,7 +101,7 @@ int main(){
     }
     cout << first << " " << second << endl;
 */
-    // Reverse eracvh row of Matrix
+    // Reverse each row of Matrix
     int arr[3][4] = {2,3,4,5,1,2,3,4,2,4,6,8};
     print_row_wise(arr,3,4);
 
