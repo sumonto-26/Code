@@ -1,0 +1,187 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #f3f4f6, #e2e8f0);
+  color: #333;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  padding: 0.50rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+header img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Hero text */
+.hero {
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero h4 {
+  font-size: 1.25rem;
+  color: #444;
+  font-weight: 500;
+}
+
+/* Grid buttons layout */
+.grid-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  padding: 2.5rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.undo-button {
+  background-color: rgb(207, 223, 253);
+  padding: 0rem 0.5rem;
+  border-radius: 100px;
+  left : 1.5%;
+  border: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: all 0.5s ease;
+  font-size: 2.0rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  color: #1a202b;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+
+/* Styled buttons */
+.button {
+  background-color: white;
+  padding: 1.2rem 1.5rem;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  color: #102650;
+  position: relative;
+  overflow: hidden;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 60, 114, 0.1);
+  transition: all 0.3s ease;
+}
+
+.button:hover::before {
+  left: 0;
+}
+
+.button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  background-color: #f0f4ff;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Back button positioning */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #1e3c72;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #2a5298;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Video container */
+.video-container {
+  max-width: 100%;
+  margin: 2rem auto;
+  display: block;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.back-btn {
+  margin-top: 20px;
+}
+
+.video-list iframe,
+.photo-list img,
+.note-videos iframe,
+.note-images img,
+.note-pdfs iframe {
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+}
+
+.video-container iframe:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive design for videos */
+@media (max-width: 768px) {
+  .video-container iframe {
+    height: 250px; /* Adjust for smaller screens */
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subjects - Sumonto's Academic</title>
+  <link rel="stylesheet" href="study.css" />
+</head>
+
+<body>
+
+  <header>
+    <!-- Undo Button -->
+    <div style="margin-top: 10px; text-align: left;">
+      <button onclick="window.location.href='study.html'" style="padding: 5px 10px; font-size: 20px;">
+        Sumonto's Academic
+      </button>
+    </div>
+    <br>
+    <h2>Book PDF</h2>
+  </header>
+
+  <br>
+  <button onclick="goBack()" height="2" class="undo-button">↶</button>
+
+  <main class="materials">
+    <!-- Chapters -->
+    <div id="chapter-section" class="grid-buttons">
+      <!-- Chapters will be added dynamically based on subject -->
+    </div>
+
+    <!-- Chapter Options -->
+    <div id="options-section" class="grid-buttons hidden">
+      <h2 id="chapter-title"></h2>
+      <button class="button" onclick="goTo('videos')">📹 Videos</button>
+      <button class="button" onclick="goTo('notes')">📝 Notes</button>
+      <button class="button" onclick="goTo('problems')">❓ Problems</button>
+    </div>
+
+    <!-- Video Options -->
+    <div id="video-options" class="grid-buttons hidden">
+      <h2>Choose Video Type</h2>
+      <button class="button" onclick="goTo('oneshots')">🎯 One Shots</button>
+      <button class="button" onclick="goTo('course')">📘 Course</button>
+    </div>
+
+    <!-- Notes Options -->
+    <div id="notes-options" class="grid-buttons hidden">
+      <h2>Choose Notes Type</h2>
+      <button class="button" onclick="goTo('note-videos')">📹 Video Notes</button>
+      <button class="button" onclick="goTo('note-images')">🖼️ Image Notes</button>
+      <button class="button" onclick="goTo('note-pdfs')">📄 PDF Notes</button>
+    </div>
+
+    <!-- Problems Options -->
+    <div id="problems-options" class="grid-buttons hidden">
+      <h2>Choose Problem Type</h2>
+      <button class="button" onclick="goTo('mcq')">✅ MCQ</button>
+      <button class="button" onclick="goTo('cq')">🧠 CQ (Creative)</button>
+    </div>
+
+    <!-- Video List -->
+    <div id="video-page" class="grid-buttons hidden">
+      <h2 id="video-title">Video List</h2>
+      <div class="video-list"></div>
+    </div>
+
+    <!-- Problems MCQ -->
+    <div id="problems-mcq-photos" class="grid-buttons hidden">
+      <h2>🖼️ MCQ Photos</h2>
+      <div class="photo-list"></div>
+    </div>
+
+    <!-- Problems CQ -->
+    <div id="problems-cq-photos" class="grid-buttons hidden">
+      <h2>🧠 CQ Photos</h2>
+      <div class="photo-list"></div>
+    </div>
+
+    <!-- Notes Video -->
+    <div id="note-videos" class="grid-buttons hidden">
+      <h2>📹 Notes Videos</h2>
+      <div class="note-videos"></div>
+    </div>
+
+    <!-- Notes Image -->
+    <div id="note-images" class="grid-buttons hidden">
+      <h2>🖼️ Notes Images</h2>
+      <div class="note-images"></div>
+    </div>
+
+    <!-- Notes PDFs -->
+    <div id="note-pdfs" class="grid-buttons hidden">
+      <h2>📄 Notes PDFs</h2>
+      <div class="note-pdfs"></div>
+    </div>
+  </main>
+
+  <script src="subjects.js"></script>
+</body>
+
+</html>

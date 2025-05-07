@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Physics - Sumonto's Academic</title>
+  <link rel="stylesheet" href="../../study.css" />
+</head>
+
+<body>
+
+  <header>
+    <!-- Undo Button -->
+    <div style="margin-top: 10px; text-align: left;">
+      <button onclick="window.location.href='../../study.html'" style="padding: 5px 10px; font-size: 20px;">
+        Sumonto's Academic
+      </button>
+    </div>
+    <br>
+    <h2> Book PDF </h2>
+    
+    <!-- Button to simulate content changes -->
+    <a href="f:\Sumonto\ACADEMIC\Books PDF\Class 9-10\Important Subjects\2025\পদার্থবিজ্ঞান-nctbbook.com (1).pdf"
+    target="_main"> <img src="https://www.elitefts.com/wp/wp-content/uploads/2019/06/physics.jpg" alt="Book PDF"
+    height="100px"></a>
+    <br>
+  </header>
+  <!-- Undo Image Button -->
+  <br>
+  <button onclick = "goBack()" height = "2" class = "undo-button" >↶</button>
+
+  <main class="materials">
+    <!-- Chapters -->
+    <div id="chapter-section" class="grid-buttons">
+      <button class="button" onclick="goTo('chapter', 'Chapter 1:')">অধ্যায়-১: </button>
+      <button class="button" onclick="goTo('chapter', 'Chapter 2:')">অধ্যায়-২:</button>
+      <button class="button" onclick="goTo('chapter', 'Chapter 3:')">অধ্যায়-৩:</button>
+      <button class="button" onclick="goTo('chapter', 'Chapter 4:')">অধ্যায়-৪:</button>
+      <button class="button" onclick="goTo('chapter', 'Chapter 5:')">অধ্যায়-৫:</button>
+      <button class="button" onclick="goTo('chapter', 'Chapter 6:')">অধ্যায়-৬: </button>
+      <button class="button" onclick="goTo('chapter', 'Others:')">Others</button>
+      
+    </div>
+
+    <!-- Chapter Options -->
+    <div id="options-section" class="grid-buttons hidden">
+      <h2 id="chapter-title"></h2>
+      <button class="button" onclick="goTo('videos')">📹 Videos</button>
+      <button class="button" onclick="goTo('notes')">📝 Notes</button>
+      <button class="button" onclick="goTo('problems')">❓ Problems</button>
+    </div>
+
+    <!-- Video Options -->
+    <div id="video-options" class="grid-buttons hidden">
+      <h2>Choose Video Type</h2>
+      <button class="button" onclick="goTo('oneshots')">🎯 One Shots</button>
+      <button class="button" onclick="goTo('course')">📘 Course</button>
+    </div>
+
+    <!-- Notes Options -->
+    <div id="notes-options" class="grid-buttons hidden">
+      <h2>Choose Notes Type</h2>
+      <button class="button" onclick="goTo('note-videos')">📹 Video Notes</button>
+      <button class="button" onclick="goTo('note-images')">🖼️ Image Notes</button>
+      <button class="button" onclick="goTo('note-pdfs')">📄 PDF Notes</button>
+    </div>
+
+    <!-- Problems Options -->
+    <div id="problems-options" class="grid-buttons hidden">
+      <h2>Choose Problem Type</h2>
+      <button class="button" onclick="goTo('mcq')">✅ MCQ</button>
+      <button class="button" onclick="goTo('cq')">🧠 CQ (Creative)</button>
+    </div>
+
+    <!-- Video List -->
+    <div id="video-page" class="grid-buttons hidden">
+      <h2 id="video-title">Video List</h2>
+      <div class="video-list"></div>
+    </div>
+
+    <!-- Problems MCQ -->
+    <div id="problems-mcq-photos" class="grid-buttons hidden">
+      <h2>🖼️ MCQ Photos</h2>
+      <div class="photo-list"></div>
+    </div>
+
+    <!-- Problems CQ -->
+    <div id="problems-cq-photos" class="grid-buttons hidden">
+      <h2>🧠 CQ Photos</h2>
+      <div class="photo-list"></div>
+    </div>
+
+    <!-- Notes Video -->
+    <div id="note-videos" class="grid-buttons hidden">
+      <h2>📹 Notes Videos</h2>
+      <div class="note-videos"></div>
+    </div>
+
+    <!-- Notes Image -->
+    <div id="note-images" class="grid-buttons hidden">
+      <h2>🖼️ Notes Images</h2>
+      <div class="note-images"></div>
+    </div>
+
+    <!-- Notes PDFs -->
+    <div id="note-pdfs" class="grid-buttons hidden">
+      <h2>📄 Notes PDFs</h2>
+      <div class="note-pdfs"></div>
+    </div>
+  </main>
+
+  <script src="./ict.js"></script>
+</body>
+
+</html>
